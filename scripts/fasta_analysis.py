@@ -14,3 +14,9 @@ def at_content(seq):
     at = (a + t) / len(seq) * 100
     return at
 print(« AT content:", at_content(sequence))
+def gc_content(seq):
+    g = seq.count("G")
+    c = seq.count("C")
+    gc = (g + c) / len(seq) * 100
+    return gc
+print("GC content:", gc_content(sequence))
